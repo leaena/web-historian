@@ -38,8 +38,6 @@ exports.serveStaticAssets = function(res, folder, asset) {
   //(Static files are things like html (yours or arhived from others...), css, or anything that doesn't change often.)
   fs.readFile(folder + asset, function (err, html) {
     if (err) {
-      console.log('folder: ', folder);
-      console.log('asset: ', asset);
       sendResponse(404, res, html);
     } else {
       headers['Content-Type'] = extensions[path.extname(asset)];

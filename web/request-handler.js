@@ -1,35 +1,36 @@
 var path = require('path');
 var url = require('url');
-var fs = require('fs');
 var helpers = require("./http-helpers");
+var fs = require('fs');
 module.exports.datadir = path.join(__dirname, "../data/sites.txt"); // tests will need to override this.
 
 
 
 var paths = {
-  '/': 'index.html'
+  '/': 'index.html',
+  '/styles.css': 'styles.css'
 };
 
-var checkSite = function(res, data){
-  var folder = 'data/sites';
-  fs.readdir(folder, function (err, files) {
-    if (err) {
-      console.log(err);
-      return;
+var checkSite = function (req, res, data){
+  fs.readdir('data/sites', function(err, file) {
+    if(err) throw err;
+    for(var i = 0; i < file.length; i++){
+      if(file[i] === data) {
+        console.log('google data: ', data);
+        helpers.serveStaticAssets(res, 'data/sites/', data);
+        return;
+      }
     }
-    console.log(files);
+    helpers.saveSite(res, data.concat('\n'), module.exports.datadir);
   });
 };
 
-var getSite = function(req, res, folder){
+var getSite = function(req, res){
   var pathname = url.parse(req.url).pathname;
-  var data = '';
-  data += fs.readFileSync(module.exports.datadir);
-  data = data.split('\n');
-  if(data.indexOf(pathname.slice(1)) !== -1){
-    folder = 'data/';
+  var folder = 'data/sites/';
+  if(paths[pathname]){
+    folder = 'web/public/';
   }
-  folder = 'web/public/' || folder;
   pathname = paths[pathname] || pathname;
 
   helpers.serveStaticAssets(res, folder, pathname);
@@ -42,7 +43,7 @@ var addSite = function(req, res) {
   });
   req.on('end', function() {
     data = data.split("").slice(4).join("");
-    checkSite(res, data.concat('\n'));
+    checkSite(req, res, data);
   });
 };
 
@@ -56,5 +57,3 @@ module.exports.handleRequest = function (req, res) {
   var method = requests[req.method];
   method(req, res);
 };
-
-// helpers.saveSite
