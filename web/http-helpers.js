@@ -30,7 +30,7 @@ exports.sendResponse = sendResponse = function(status, res, data) {
 exports.saveSite = function(res, data, folder) {
   console.log("Save site: ", folder);
   fs.appendFileSync(folder, data, "UTF-8");
-  sendResponse(302, res, data);
+  sendResponse(302, res, "Successfully saved!");
 };
 
 exports.serveStaticAssets = function(res, folder, asset) {

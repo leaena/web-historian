@@ -1,4 +1,5 @@
 var fs = require('fs');
+var request = require('request');
 
 
 exports.readUrls = function(filePath, cb){
@@ -8,6 +9,8 @@ exports.readUrls = function(filePath, cb){
   cb(data);
 };
 
-exports.downloadUrls = function(urls){
-  return true;
+exports.downloadUrls = function(url){
+  request({uri: "http://" + url}, function(error, response, body){
+    fs.writeFile('data/sites/' + url, body);
+  });
 };
