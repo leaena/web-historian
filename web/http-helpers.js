@@ -14,20 +14,38 @@ var extensions = {
   '.js': "text/javascript",
   '.css': "text/css",
   '.ico': "image/ico"
-}
+};
+
+exports.sendOptions = sendOptions = function(res) {
+  sendResponse(null, res);
+};
+
+
+exports.sendResponse = sendResponse = function(status, res, data) {
+  status = status || 200;
+  res.writeHead(status, headers);
+  res.end(data);
+};
+
+exports.saveSite = function(res, data, folder) {
+  console.log("Save site: ", folder);
+  fs.appendFileSync(folder, data, "UTF-8");
+  sendResponse(302, res, data);
+};
 
 exports.serveStaticAssets = function(res, folder, asset) {
   //Write some code here that helps serve up your static files!
   //(Static files are things like html (yours or arhived from others...), css, or anything that doesn't change often.)
   fs.readFile(folder + asset, function (err, html) {
     if (err) {
-      throw err;
+      console.log('folder: ', folder);
+      console.log('asset: ', asset);
+      sendResponse(404, res, html);
+    } else {
+      headers['Content-Type'] = extensions[path.extname(asset)];
+      sendResponse(200, res, html);
     }
-    headers['Content-type'] = extensions[path.extname(asset)];
-    res.writeHeader(200, headers);
-    res.write(html);
-    res.end();
-    });
+  });
 };
 
 exports.headers;
