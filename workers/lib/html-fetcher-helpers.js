@@ -11,6 +11,6 @@ exports.readUrls = function(filePath, cb){
 
 exports.downloadUrls = function(url){
   request({uri: "http://" + url}, function(error, response, body){
-    fs.writeFile('data/sites/' + url, body);
+    fs.writeFile('/Users/hackreactor/code/leaena/2013-11-web-historian/data/sites/' + url, body);
   });
 };

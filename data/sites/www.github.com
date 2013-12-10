@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
     <link rel="logo" type="image/svg" href="https://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
     <meta property="og:image" content="https://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png">
-    <meta name="hostname" content="github-fe121-cp1-prd.iad.github.net">
+    <meta name="hostname" content="github-fe128-cp1-prd.iad.github.net">
     <meta name="ruby" content="ruby 1.9.3p194-tcs-github-tcmalloc (e1c0c3f392) [x86_64-linux]">
     <link rel="assets" href="https://github.global.ssl.fastly.net/">
     <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
@@ -23,7 +23,7 @@
     <meta name="msapplication-TileImage" content="/windows-tile.png" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="selected-link" value="/" data-pjax-transient />
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C7575242:38E3:7AA276:52A76ADB" name="octolytics-dimension-request_id" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C7575242:50F3:66B668:52A771BC" name="octolytics-dimension-request_id" />
     
 
     
@@ -31,7 +31,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZXWgC3TZFDaz3t3SmILBWdQ4fbKZmBFkRHUsprdN1As=" name="csrf-token" />
+<meta content="I4nFlLHU9wLKCDN/YXIMPBVRJwEZezeJEHG/3frE1/Y=" name="csrf-token" />
 
     <link href="https://github.global.ssl.fastly.net/assets/github-e0292731f704355302d725e675128e0981343934.css" media="all" rel="stylesheet" type="text/css" />
     <link href="https://github.global.ssl.fastly.net/assets/github2-64e16f723de2c4fe4624a509c8c2bda1ca8b9a5b.css" media="all" rel="stylesheet" type="text/css" />
@@ -109,7 +109,7 @@
 
 <div class="marketing-section marketing-section-signup">
   <div class="container">
-      <form accept-charset="UTF-8" action="/join" autocomplete="off" class="form-signup-home js-form-signup-home" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="ZXWgC3TZFDaz3t3SmILBWdQ4fbKZmBFkRHUsprdN1As=" /></div>        <dl class="form">
+      <form accept-charset="UTF-8" action="/join" autocomplete="off" class="form-signup-home js-form-signup-home" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="I4nFlLHU9wLKCDN/YXIMPBVRJwEZezeJEHG/3frE1/Y=" /></div>        <dl class="form">
           <dd>
             <input type="text" name="user[login]" class="textfield" placeholder="Pick a username" data-autocheck-url="/signup_check/username" autofocus>
           </dd>
@@ -260,7 +260,7 @@
     </a>
 
     <ul class="site-footer-links">
-      <li>&copy; 2013 <span title="0.00514s from github-fe121-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2013 <span title="0.00408s from github-fe128-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="/site/terms">Terms</a></li>
         <li><a href="/site/privacy">Privacy</a></li>
         <li><a href="/security">Security</a></li>

