@@ -23,7 +23,13 @@ var checkSite = function(res, data){
 
 var getSite = function(req, res, folder){
   var pathname = url.parse(req.url).pathname;
-  var folder = 'web/public/' || folder;
+  var data = '';
+  data += fs.readFileSync(module.exports.datadir);
+  data = data.split('\n');
+  if(data.indexOf(pathname.slice(1)) !== -1){
+    folder = 'data/';
+  }
+  folder = 'web/public/' || folder;
   pathname = paths[pathname] || pathname;
 
   helpers.serveStaticAssets(res, folder, pathname);
